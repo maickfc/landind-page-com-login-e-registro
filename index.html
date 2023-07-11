@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navegador">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnlogin">Login</button>
+        </nav>
+    </header>
+
+    <div class="caixa-de-login">
+        <span class="icone-x">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+        <div class="forma-caixa-login login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icone"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icone"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Lembre-me</label>
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-registro">
+                    <p>Não tenho uma conta?
+                        <a href="#" class="register-link">Cadastro</a>
+                    </p>
+                </div>
+            </form>  
+        </div> <!-- forma-caixa-login -->
+
+        <div class="forma-caixa-login registro">
+            <h2>Registro</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icone"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nome de Usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icone"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icone"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Você aceita os termos indicados?</label>
+                    
+                </div>
+                <button type="submit" class="btn">Registro</button>
+                <div class="login-registro">
+                    <p>Já possui uma conta?
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div> <!-- forma-caixa-registro -->
+    </div><!-- caixa-de-login -->
+
+    
+
+    <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
